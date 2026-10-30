@@ -89,8 +89,93 @@ footer p {
 }
 
 .dicograhpy {
-    padding: 1.5em;
-    width: 18em;
-    height: 18em;
+    width: 16em;
+    height: 16em;
+    padding: 0;
+    border-radius: 15px;
+    object-fit: cover;
+}
 
+
+.box {
+    background-color: #FBC9D4;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.arrow-color {
+    filter: brightness(0);
+}
+
+
+.band-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #FBC9D4;
+}
+
+.mitglied {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mitglied img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.mitglied-text {
+    color: black;
+}
+
+.mitglied-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mitglied-text p {
+    font-size: 16px;
+}
+
+.john {
+    object-position: center top;
+}
+
+@media (max-width: 900px) {
+    .band-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .mitglied {
+        flex-direction: column;
+    }
+
+    .band-container {
+        padding: 20px;
+    }
+}
+
+.table-layout {
+    --bs-table-bg: rgba(93, 15, 15, 0.068);
+    --bs-table-border-color: rgb(93, 15, 15);
+}
+
+.kalenderseite {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
