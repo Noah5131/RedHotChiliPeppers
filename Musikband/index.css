@@ -1,32 +1,96 @@
 .navbar {
-    background-color: #099fd1 !important;
+    background-color: #FBC9D4 !important;
 }
 
 .bild-container {
     position: relative;
-    display: inline-block;
+    display: grid;
 }
 
 .bild-container img {
     display: block;
+    width: 100%;
+    grid-area: 1 / 1;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    grid-area: 1 / 1;
+    justify-self: center;
+    align-self: center;
+    width: 60%;
+    height: auto%;
 
-    background: rgba(128, 128, 128, 0.8);
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+
 
     color: rgb(255, 255, 255);
     text-align: start;
+
 }
 
-.spotify {}
+.mein-toggler {
+    background-color: #BD0837;
+    border: 2px solid #BD0837;
+}
+
+.mein-search {
+    color: #BD0837;
+    border: 2px solid #BD0837;
+    background-color: transparent;
+}
+
+.mein-search:hover {
+    background-color: #BD0837;
+    color: white;
+    border-color: #BD0837;
+}
+
+footer {
+    background-color: #FBC9D4;
+    color: #000000;
+    padding: 1.5em;
+
+}
+
+
+body {
+    background-color: #BD0837;
+}
+
+.form-control:focus {
+    border-color: #BD0837;
+    box-shadow: 0 0 0 0.25rem rgba(189, 8, 55, 0.25);
+    outline: none;
+}
+
+footer {
+    background-color: #FBC9D4;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.overlay h2 {
+    justify-self: center;
+}
+
+.dicograhpy {
+    padding: 1.5em;
+    width: 18em;
+    height: 18em;
+
+}
