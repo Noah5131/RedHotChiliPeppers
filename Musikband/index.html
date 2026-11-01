@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="bootstrap_class/css/bootstrap.min.css" rel="stylesheet">
+    <link href="band.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
     <link rel="icon" href="img/logo2.png">
@@ -27,12 +27,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Über uns</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bandmembers">
+                            Bandmitglieder
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -44,8 +43,11 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#carouselExample">Songs</a>
                     </li>
+                    <a class="nav-link" href="#news">News</a>
+                    <a class="nav-link" href="#tour">Tour</a>
+                    <a class="nav-link" id="contact" href="kontakt.html">Kontakt</a>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -73,7 +75,7 @@
     </div>
 
 
-    <div class="band-container">
+    <div class="band-container" id="bandmembers">
 
         <div class="mitglied">
             <img src="img/Anthony_Kiedis_2022.jpg" alt="Anthony Kiedis">
@@ -176,7 +178,7 @@
     </div>
 
 
-    <div class="container my-5">
+    <div class="container my-5" id="news">
         <div class="row g-4">
 
 
@@ -184,7 +186,7 @@
                 <div class="card h-100">
                     <img src="img/red-hot-chili-peppers-unlimited-love.jpg" class="card-img-top" alt="News 1">
 
-                    <div class="card-body">
+                    <div class="card-body news-farbe">
                         <h5 class="card-title">
                             Flea verliert seinen Bass mitten im Konzert!
                         </h5>
@@ -209,7 +211,7 @@
                 <div class="card h-100">
                     <img src="img/Vorlagen-FB.jpg" class="card-img-top" alt="News 2">
 
-                    <div class="card-body">
+                    <div class="card-body news-farbe">
                         <h5 class="card-title">Red Hot Chili Peppers spielen erstes Konzert im Weltall!</h5>
 
                         <p class="card-text">
@@ -224,11 +226,11 @@
             </div>
 
 
-            <div class="col-md-4">
+            <div class="col-md-4 ">
                 <div class="card h-100">
                     <img src="img/71ecac5d.jpg" class="card-img-top" alt="News 3">
 
-                    <div class="card-body">
+                    <div class="card-body news-farbe">
                         <h5 class="card-title"> RHCP überraschen Fans mit einem Konzert in der U-Bahn!</h5>
 
                         <p class="card-text">
@@ -245,7 +247,7 @@
         </div>
     </div>
 
-    <table class="table table-bordered table-layout my-5 kalenderseite">
+    <table class="table table-bordered table-layout my-5 kalenderseite" id="tour">
         <thead>
             <tr>
                 <th scope="col" class="text-center">Montag</th>
@@ -258,56 +260,49 @@
             </tr>
         </thead>
         <tbody>
-            <td class="table-height"></td>
-            <td class="table-height"></td>
-            <td class="table-height"></td>
-            <td class="table-height"><strong>1</strong></td>
-            <td class="table-height table-active"><strong>2</strong>
-                <p class="events">Join our Live concert in Zürich</p>
-            </td>
-            <td class="table-height"><strong>3</strong></td>
-            <td class="table-height"><strong>4</strong></td>
+            <h1 class="november">November</h1>
+            <p class="november"> Unsere Europatour:</p>
+            <td class="table-heigh "><strong></strong></td>
+            <td class="table-height"><strong></strong></td>
+            <td class="table-height"><strong></strong></td>
+            <td class="table-height"><strong>1.</strong></td>
+            <td class="table-height"><strong>2.</strong></td>
+            <td class="table-height"><strong>3. Berlin</strong></td>
+            <td class="table-height"><strong>4.München</strong></td>
             <tr>
-                <td class="table-height table-active"><strong>5</strong>
-                    <p class="events">Acustic Session happening Online</p>
-                </td>
-                <td class="table-height"><strong>6</strong></td>
-                <td class="table-height"><strong>7</strong></td>
-                <td class="table-height"><strong>8</strong></td>
-                <td class="table-height"><strong>9</strong></td>
-                <td class="table-height"><strong>10</strong></td>
-                <td class="table-height"><strong>11</strong></td>
+                <td class="table-heigh "><strong>5.</strong></td>
+                <td class="table-height"><strong>6.</strong></td>
+                <td class="table-height"><strong>7.</strong></td>
+                <td class="table-height"><strong>8.</strong></td>
+                <td class="table-height"><strong>9.</strong></td>
+                <td class="table-height"><strong>10. Zürich</strong></td>
+                <td class="table-height"><strong>11. Bern</strong></td>
             </tr>
             <tr>
-                <td class="table-height"><strong>12</strong></td>
-                <td class="table-height"><strong>13</strong></td>
-                <td class="table-height"><strong>14</strong></td>
-                <td class="table-height table-active"><strong>15</strong>
-                    <p class="events">Fan Mooten&Greet in Berlin</p>
-                </td>
-                <td class="table-height"><strong>16</strong></td>
-                <td class="table-height"><strong>17</strong></td>
-                <td class="table-height"><strong>18</strong></td>
+                <td class="table-height"><strong>12.</strong></td>
+                <td class="table-height"><strong>13.</strong></td>
+                <td class="table-height"><strong>14.</strong></td>
+                <td class="table-heigh"><strong>15.</strong></td>
+                <td class="table-height"><strong>16.</strong></td>
+                <td class="table-height"><strong>17. Paris</strong></td>
+                <td class="table-height"><strong>18. Lion</strong></td>
             </tr>
             <tr>
-                <td class="table-height"><strong>19</strong></td>
-                <td class="table-height"><strong>20</strong></td>
-                <td class="table-height table-active"><strong>21</strong>
-                    <p class="events">Get ready for out Live concert in Paris</p>
-                </td>
-                <td class="table-height"><strong>22</strong></td>
-                <td class="table-height"><strong>23</strong></td>
-                <td class="table-height"><strong>24</strong></td>
-                <td class="table-height"><strong>25</strong></td>
+                <td class="table-height"><strong>19.</strong></td>
+                <td class="table-height"><strong>20.</strong></td>
+                <td class="table-height"><strong>21.</strong></td>
+                <td class="table-height"><strong>22.</strong></td>
+                <td class="table-height"><strong>23.</strong></td>
+                <td class="table-height"><strong>24. London</strong></td>
+                <td class="table-height"><strong>25. Birminghham</strong></td>
             </tr>
             <tr>
-                <td class="table-height"><strong>26</strong></td>
-                <td class="table-height"><strong>27</strong></td>
-                <td class="table-height"><strong>28</strong></td>
-                <td class="table-height"><strong>29</strong></td>
-                <td class="table-height"><strong>30</strong></td>
-                <td class="table-height table-active"><strong>31</strong>
-                    <p class="events">Halloween special show in London</p>
+                <td class="table-height"><strong>26.</strong></td>
+                <td class="table-height"><strong>27.</strong></td>
+                <td class="table-height"><strong>28.</strong></td>
+                <td class="table-height"><strong>29.</strong></td>
+                <td class="table-height"><strong>30.</strong></td>
+                <td class="table-height"><strong></strong>
                 </td>
                 <td class="table-height"></td>
             </tr>

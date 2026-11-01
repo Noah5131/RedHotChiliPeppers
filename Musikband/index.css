@@ -18,7 +18,7 @@
     justify-self: center;
     align-self: center;
     width: 60%;
-    height: auto%;
+    height: auto;
 
     background-color: rgba(30, 30, 30, 0.8);
     padding: 30px;
@@ -49,13 +49,6 @@
     border-color: #BD0837;
 }
 
-footer {
-    background-color: #FBC9D4;
-    color: #000000;
-    padding: 1.5em;
-
-}
-
 
 body {
     background-color: #BD0837;
@@ -82,6 +75,11 @@ footer p {
 .icons img {
     width: 40px;
     height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+    transform: translateY(-10px);
 }
 
 .overlay h2 {
@@ -110,6 +108,9 @@ footer p {
 .arrow-color {
     filter: brightness(0);
 }
+
+.arrow-color :hover {}
+
 
 
 .band-container {
@@ -178,4 +179,56 @@ footer p {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.november {
+    display: flex;
+    justify-self: center;
+}
+
+.news-farbe {
+    background-color: #FBC9D4;
+}
+
+#contact {
+    background-color: #FBC9D4;
+}
+
+.btn-color {
+    background-color: #BD0837;
+}
+
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+@media (max-width: 760px) {
+    .bild-container {
+        display: grid;
+        min-height: 650px;
+    }
+
+    .bild-container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        grid-area: 1 / 1;
+        z-index: 1;
+        width: 90%;
+        padding: 20px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
 }
